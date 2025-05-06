@@ -14,7 +14,8 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    optimizeCss: true,
+    // Remove the optimizeCss option as it requires critters package
+    // optimizeCss: true,
     optimizeServerReact: true,
     optimisticClientCache: true,
   },

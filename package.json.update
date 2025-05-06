@@ -1,0 +1,2 @@
+// Add this to your dependencies in package.json:
+"critters": "^0.0.20"
