@@ -14,13 +14,13 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/zhongjys-projects/v0-calculadora](https://vercel.com/zhongjys-projects/v0-calculadora)**
+**[[https://vercel.com/zhongjys-projects/v0-calculadora](https://vercel.com/zhongjys-projects/v0-calculadora](https://calculosfaciles.org/))**
 
 ## Build your app
 
 Continue building your app on:
 
-**[https://v0.dev/chat/projects/gnZmGJeYjpU](https://v0.dev/chat/projects/gnZmGJeYjpU)**
+**https://calculosfaciles.org/**
 
 ## How It Works
 
