@@ -5,8 +5,15 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { ServiceWorkerRegistration } from "@/components/service-worker-registration"
 
-const inter = Inter({ subsets: ["latin"] })
+// Optimize font loading with display: swap and preload
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "sans-serif"],
+})
 
 export const metadata: Metadata = {
   title: "Calculadoras Simples Online | Herramientas de cálculo gratuitas",
@@ -62,6 +69,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        {/* Preload critical assets */}
+        <link rel="preload" href="/logo.png" as="image" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
@@ -70,6 +83,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <ServiceWorkerRegistration />
       </body>
     </html>
   )
