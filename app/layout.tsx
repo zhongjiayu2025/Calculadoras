@@ -9,9 +9,9 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Calculadoras Simples Online | Herramientas de cálculo gratuitas",
+  title: "Calculos Faciles | Herramientas de cálculo gratuitas",
   description:
-    "Colección gratuita de calculadoras online en español: interés compuesto, metros cuadrados, ritmo de carrera, letra DNI, euros-pesetas y más. Herramientas rápidas y prácticas.",
+    "Colección gratuita de calculadoras online en español: interés compuesto, metros cuadrados, ritmo de carrera, euros-pesetas y más. Herramientas rápidas y prácticas.",
   keywords:
     "calculadoras online, calculadora interés compuesto, calculadora metros cuadrados, calculadora ritmo carrera, calculadora letra dni, calculadora euros pesetas, calculadora fondos indexados, calculadora raíz cuadrada, calculadora apiretal, calculadora dalsy",
   authors: [{ name: "CalculosFaciles.org" }],
