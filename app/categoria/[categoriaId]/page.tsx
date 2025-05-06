@@ -1,3 +1,9 @@
+// app/categoria/[categoriaId]/page.tsx
+
+// 这行是新添加的，用于配置 Edge Runtime
+export const runtime = 'edge';
+
+// 客户端组件指令保持不变
 "use client"
 
 import { useCallback } from "react"
@@ -12,6 +18,7 @@ import * as Icons from "lucide-react"
 // Componente dinámico para iconos de Lucide
 const DynamicIcon = ({ name }: { name: string }) => {
   const IconComponent = Icons[name as keyof typeof Icons] || Icons.Calculator
+  // 确保类名也被传递给 IconComponent
   return <IconComponent className="h-5 w-5" />
 }
 
@@ -21,6 +28,9 @@ interface CategoriaPageProps {
   }
 }
 
+// 注意：页面组件本身仍然可以是客户端组件 "use client"
+// runtime 配置影响的是 Next.js 如何处理这个路由的服务器端部分（如果适用）
+// 以及它与 Cloudflare Pages Functions 的集成方式。
 export default function CategoriaPage({ params }: CategoriaPageProps) {
   const getCategoriaById = useCallback((id: string) => {
     return categorias.find((categoria) => categoria.id === id)
@@ -42,7 +52,8 @@ export default function CategoriaPage({ params }: CategoriaPageProps) {
           </Link>
         </Button>
         <h1 className="text-2xl font-bold flex items-center gap-2">
-          <DynamicIcon name={categoria.icono} className="text-primary" />
+          {/* 确保 DynamicIcon 正确接收并应用 className */}
+          <DynamicIcon name={categoria.icono} />
           {categoria.nombre}
         </h1>
       </div>
@@ -54,7 +65,8 @@ export default function CategoriaPage({ params }: CategoriaPageProps) {
           <Card key={calculadora.id} className="overflow-hidden shadow-md hover:shadow-lg transition-shadow">
             <CardHeader className="pb-3 bg-muted/30">
               <div className="flex items-center gap-2 mb-1">
-                <DynamicIcon name={calculadora.icono} className="text-primary" />
+                {/* 确保 DynamicIcon 正确接收并应用 className */}
+                <DynamicIcon name={calculadora.icono} />
                 <CardTitle className="text-lg">{calculadora.nombre}</CardTitle>
               </div>
               <CardDescription>{calculadora.descripcion}</CardDescription>
