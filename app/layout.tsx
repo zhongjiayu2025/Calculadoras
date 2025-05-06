@@ -1,12 +1,13 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+// app/layout.tsx
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider"; // 确认路径正确
+import { Navbar } from "@/components/navbar"; // 确认路径正确
+import { Footer } from "@/components/footer"; // 确认路径正确
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Calculos Faciles | Herramientas de cálculo gratuitas",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     description:
       "Colección gratuita de calculadoras online en español para finanzas, salud, matemáticas y vida diaria.",
   },
-  robots: {
+  robots: { // 保持允许索引的设置
     index: true,
     follow: true,
     googleBot: {
@@ -52,13 +53,25 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
-}
+
+  // --- ↓↓↓ 新增的 Google Search Console 验证字段 ↓↓↓ ---
+  verification: {
+    google: 'NAFkT9e9C-rQfwi6MsrQpG0l2KGFKazfVT7rEdxCfAs', // <--- 在这里替换成你的真实验证字符串！
+    // 如果将来有其他验证，可以加在这里，例如:
+    // yandex: '...',
+    // other: {
+    //   me: ['your-email@example.com', 'https://yoursite.com/about-me'],
+    // },
+  },
+  // --- ↑↑↑ 新增的 Google Search Console 验证字段 ↑↑↑ ---
+
+  generator: 'v0.dev' // 这个通常是构建工具加的，保留或移除皆可
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="es">
@@ -72,5 +85,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
