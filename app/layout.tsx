@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Calculadoras Simples Online | Herramientas de cálculo gratuitas",
+    title: "Calculos Faciles | Herramientas de cálculo gratuitas",
     description:
       "Colección gratuita de calculadoras online en español para finanzas, salud, matemáticas y vida diaria.",
     url: "https://calculosfaciles.org",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Calculadoras Simples Online | Herramientas de cálculo gratuitas",
+    title: "Calculos Faciles | Herramientas de cálculo gratuitas",
     description:
       "Colección gratuita de calculadoras online en español para finanzas, salud, matemáticas y vida diaria.",
   },
