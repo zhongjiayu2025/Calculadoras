@@ -1,4 +1,3 @@
-{
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
@@ -9,8 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.9.1",
-    "@radix-ui/react-accordion": "latest",
+    "@hookform/resolvers": "^3.9.1", // 暂时不动
+    "@radix-ui/react-accordion": "latest", // 后面可以考虑去掉 "latest"
     "@radix-ui/react-alert-dialog": "1.1.4",
     "@radix-ui/react-aspect-ratio": "1.1.1",
     "@radix-ui/react-avatar": "1.1.2",
@@ -30,7 +29,7 @@
     "@radix-ui/react-select": "2.1.4",
     "@radix-ui/react-separator": "1.1.1",
     "@radix-ui/react-slider": "1.2.2",
-    "@radix-ui/react-slot": "latest",
+    "@radix-ui/react-slot": "latest", // 后面可以考虑去掉 "latest"
     "@radix-ui/react-switch": "1.1.2",
     "@radix-ui/react-tabs": "1.1.2",
     "@radix-ui/react-toast": "1.2.4",
@@ -41,24 +40,24 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
-    "date-fns": "latest",
+    "date-fns": "^4.1.0",             // 从 "latest" 改成日志里的具体版本
     "embla-carousel-react": "8.5.1",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
     "next": "15.2.4",
-    "next-themes": "latest",
+    "next-themes": "latest",          // 后面可以考虑去掉 "latest"
     "react": "^19",
-    "react-day-picker": "8.10.1",
+    "react-day-picker": "^9.6.7",      // 从 8.10.1 更新到日志提示可用的版本
     "react-dom": "^19",
+    "react-helmet": "^6.1.0",         // 从 "latest" 改成具体的最新版本号
     "react-hook-form": "^7.54.1",
     "react-resizable-panels": "^2.1.7",
-    "recharts": "latest",
+    "recharts": "latest",             // 后面可以考虑去掉 "latest"
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
-    "vaul": "^0.9.6",
-    "zod": "^3.24.1",
-    "react-helmet": "latest"
+    "vaul": "^1.1.2",                 // 从 ^0.9.6 更新到日志提示可用的版本
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/node": "^22",
@@ -67,5 +66,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@8.7.1+sha512.41bb77121614697152da4e052d003baf6fde633fc9a03786ebcd3fdd45c6d066b4dcb3ee6381a076f08b7beccedcced99d61b8548e1b03093b4292727ebe5ea8" // Cloudflare 加上的，留着挺好
 }
