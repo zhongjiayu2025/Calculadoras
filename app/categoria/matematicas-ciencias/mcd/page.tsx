@@ -87,8 +87,8 @@ export default function McdPage() {
 
   return (
     <CalculatorLayout
-      title="Calculadora de Máximo Común Divisor (MCD)"
-      description="Encuentra el máximo común divisor de dos o más números enteros."
+      title="Maximo Comun Divisor Calculadora"
+      description="Usa nuestra maximo comun divisor calculadora para encontrar el MCD de dos o más números enteros."
       icon="Divide"
       backTo="/categoria/matematicas-ciencias"
       backToLabel="Matemáticas y Ciencias"
