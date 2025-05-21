@@ -30,7 +30,7 @@ export default function ApiretarPage() {
   return (
     <CalculatorLayout
       title="Calculadora de Dosis de Apiretal"
-      description="Estima la dosis recomendada (en ml) de Apiretal (paracetamol) según el peso del niño."
+      description="Con la calculadora Apiretal, o nuestra Apiretal calculadora, estima la dosis (ml) de paracetamol según el peso del niño."
       icon="Droplet"
       backTo="/categoria/salud-bienestar"
       backToLabel="Salud y Bienestar"
