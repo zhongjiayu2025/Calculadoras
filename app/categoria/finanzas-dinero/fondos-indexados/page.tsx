@@ -80,8 +80,8 @@ export default function FondosIndexadosPage() {
 
   return (
     <CalculatorLayout
-      title="Calculadora de Crecimiento de Fondos Indexados"
-      description="Proyecta el crecimiento potencial de una inversión en fondos indexados a lo largo del tiempo, considerando inversión inicial, aportaciones periódicas y una tasa de retorno anual estimada."
+      title="calculadora fondos indexados"
+      description="Nuestra calculadora fondos indexados proyecta el crecimiento de tu inversión con capital inicial, aportaciones periódicas y tasa de retorno anual."
       icon="LineChart"
       backTo="/categoria/finanzas-dinero"
       backToLabel="Finanzas y Dinero"
