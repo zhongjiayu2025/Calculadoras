@@ -51,9 +51,9 @@ export default function InteresCompuestoClientPage() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebApplication",
-            name: "Calculadora de Interés Compuesto",
+            name: "Interes Compuesto Calculadora",
             description:
-              "Calcula el valor futuro de una inversión o depósito basado en el capital inicial, tasa de interés anual, frecuencia de capitalización y período de tiempo.",
+              "Calcula el valor futuro de tu inversión con nuestra interes compuesto calculadora. Simula escenarios con capital inicial, tasa y plazos.",
             applicationCategory: "FinanceApplication",
             operatingSystem: "Web",
             offers: {
@@ -65,8 +65,8 @@ export default function InteresCompuestoClientPage() {
         </script>
       </Helmet>
       <CalculatorLayout
-        title="Calculadora de Interés Compuesto"
-        description="Calcula el valor futuro de una inversión o depósito basado en el capital inicial, tasa de interés anual, frecuencia de capitalización y período de tiempo."
+        title="Interes Compuesto Calculadora"
+        description="Calcula el valor futuro de tu inversión con nuestra interes compuesto calculadora. Simula escenarios con capital inicial, tasa y plazos."
         icon="TrendingUp"
         backTo="/categoria/finanzas-dinero"
         backToLabel="Finanzas y Dinero"
