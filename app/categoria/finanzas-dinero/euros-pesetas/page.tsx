@@ -60,8 +60,8 @@ export default function EurosPesetasPage() {
 
   return (
     <CalculatorLayout
-      title="Conversor Euros ↔ Pesetas"
-      description="Convierte cantidades entre Euros (EUR) y la antigua Peseta española (ESP) usando el tipo de cambio fijo oficial."
+      title="Calculadora Euros Pesetas"
+      description="Usa nuestra calculadora euros pesetas para convertir entre Euros (EUR) y la antigua Peseta española (ESP) con el cambio fijo oficial."
       icon="RefreshCw"
       backTo="/categoria/finanzas-dinero"
       backToLabel="Finanzas y Dinero"
