@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Colección gratuita de calculadoras online en español: interés compuesto, metros cuadrados,euros-pesetas y más. Herramientas rápidas y prácticas.",
   keywords:
-    "calculadoras online, calculadora interés compuesto, calculadora metros cuadrados, calculadora ritmo carrera, calculadora letra dni, calculadora euros pesetas, calculadora fondos indexados, calculadora raíz cuadrada, calculadora apiretal, calculadora dalsy",
+    "interes compuesto calculadora, calculadora euros pesetas, calculadora fondos indexados, calculadora dalsy, calculadora de ciclos de sueño, calculadora de menstruacion,ciclo menstrual calculadora, calculadora de raiz cuadrada, maximo comun divisor calculadora, calculadora de formula general",
   authors: [{ name: "CalculosFaciles.org" }],
   creator: "CalculosFaciles.org",
   publisher: "CalculosFaciles.org",
