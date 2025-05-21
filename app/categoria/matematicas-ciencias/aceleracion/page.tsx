@@ -105,7 +105,7 @@ export default function AceleracionPage() {
   return (
     <CalculatorLayout
       title="Calculadora de Aceleración"
-      description="Calcula la aceleración constante basándose en la velocidad inicial, la velocidad final y el tiempo."
+      description="Este calculador de aceleracion determina la aceleración constante a partir de la velocidad inicial, la velocidad final y el tiempo."
       icon="ZapFast"
       backTo="/categoria/matematicas-ciencias"
       backToLabel="Matemáticas y Ciencias"
