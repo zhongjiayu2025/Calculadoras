@@ -83,8 +83,8 @@ export default function AreasTriangulosPage() {
 
   return (
     <CalculatorLayout
-      title="Calculadora de Área de Triángulos"
-      description="Calcula el área de un triángulo proporcionando la base y la altura, o los tres lados (fórmula de Herón)."
+      title="Calculadora de Áreas de Triángulos"
+      description="Usa nuestro calculador de areas de triangulos para hallar el área de un triángulo proporcionando la base y altura, o los tres lados (fórmula de Herón)."
       icon="Triangle"
       backTo="/categoria/construccion-hogar"
       backToLabel="Construcción y Hogar"
