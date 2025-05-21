@@ -108,8 +108,8 @@ export default function CoeficientesBinomialesPage() {
 
   return (
     <CalculatorLayout
-      title="Calculadora de Coeficientes Binomiales"
-      description="Calcula el coeficiente binomial 'n sobre k' (combinaciones de n elementos tomados de k en k)."
+      title="Calculadora de Binomiales"
+      description="Usa nuestro calculador de binomios para hallar el coeficiente 'n sobre k' (combinaciones de n elementos tomados de k en k)."
       icon="Code"
       backTo="/categoria/matematicas-ciencias"
       backToLabel="Matemáticas y Ciencias"
