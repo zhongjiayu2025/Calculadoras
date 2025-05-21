@@ -32,7 +32,7 @@ export default function DalsyPage() {
   return (
     <CalculatorLayout
       title="Calculadora de Dosis de Dalsy"
-      description="Estima la dosis recomendada (en ml) de Dalsy (ibuprofeno) según el peso del niño."
+      description="Usa nuestra calculadora dalsy para estimar la dosis recomendada (en ml) de Dalsy (ibuprofeno) según el peso del niño."
       icon="Droplet"
       backTo="/categoria/salud-bienestar"
       backToLabel="Salud y Bienestar"
