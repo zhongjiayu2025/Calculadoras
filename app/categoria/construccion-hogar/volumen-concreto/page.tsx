@@ -36,7 +36,7 @@ export default function VolumenConcretoPage() {
   return (
     <CalculatorLayout
       title="Calculadora de Volumen de Concreto"
-      description="Calcula el volumen de concreto necesario para rellenar una forma rectangular simple."
+      description="Esta tabla para calcular concreto te ayuda a estimar el volumen de material necesario para rellenar una forma rectangular simple."
       icon="Box"
       backTo="/categoria/construccion-hogar"
       backToLabel="Construcción y Hogar"
